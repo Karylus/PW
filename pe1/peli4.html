@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cines Moreno - Detalles Pelicula</title>
+        <link rel="stylesheet" href="estilo.css">
+        <!--Adapta la web al ancho del dispositivo y el zoom-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="enlace-imagen"><img class="logo" src="imagenes/logo.png" alt="Logo"></a>
+
+            <a href="index.html" class="enlace-imagen"><h1>Cines Moreno</h1></a>
+
+            <section class="login">
+                <form class="inicio_sesion" action="procesar.php" method="post">
+                    <input type="text" id="usuario" name="usuario" required placeholder="Usuario"><br>
+
+                    <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña"><br>
+
+                    <input type="submit" id="boton" value="Iniciar Sesión"><br>
+                    <a href="altausuarios.html">Registro de usuario</a>
+                </form>
+            </section>
+
+            <!--Este section lo voy a usar cuando necesite que el siguiente elemento esté en una linea nueva-->
+            <section class="break"></section>
+
+            <nav class="indice">
+                <article><a href="index.html">Inicio</a></article>
+                <article><a href="estrenos.html">Estrenos</a></article>
+                <article><a href="cartelera.html">Cartelera</a></article>
+                <article><a href="horarios.html">Horarios</a></article>
+                <article><a href="tarifas.html">Tarifas</a></article>
+                <article><a href="informacion.html">Información</a></article>
+            </nav>
+        </header>
+
+        <main>
+            <section class="caja_datos">
+                <h2>El ladrón del tiempo</h2>
+
+                <section class="break"></section>
+
+                <section class="fila_imagenes">
+                    <img class="frame" src="imagenes/oca.jpg" alt="Frame 1">
+                    <img class="frame" src="imagenes/loro.jpg" alt="Frame 2">
+                    <img class="frame" src="imagenes/conejo.jpg" alt="Frame 3">
+                    <img class="frame" src="imagenes/perro.jpg" alt="Frame 4">
+                </section>
+
+                <section class="datos_pelicula">
+                    <h3>Director</h3>
+                    <p>Juan Pedro Moreno</p>
+                    
+                    <h3>Actores Principales</h3>
+                    <p>Jim Carrey - Lauren Holly - Jeff Daniels - Ian McNeice - Jennifer Tilly</p>
+
+                    <h3>Sinopsis</h3>
+                    <p> 
+                        "El ladrón del tiempo" es una película de ciencia ficción y aventuras que cuenta 
+                        la historia de un grupo de científicos que han desarrollado la tecnología para 
+                        viajar en el tiempo. Pero cuando uno de los científicos es secuestrado por un 
+                        misterioso ladrón del tiempo, el grupo debe seguir las pistas a través de diferentes 
+                        épocas y lugares para encontrar al secuestrador y recuperar su tecnología. A medida que 
+                        se desplazan por el tiempo, el equipo descubre una conspiración mucho más grande y peligrosa 
+                        de lo que esperaban.
+                    </p>
+
+                    <h3>Género</h3>
+                    <p>Ciencia ficción - Aventuras - Thriller - Misterio</p>
+                </section>
+
+                <section class="clasificacion">
+                    <article class="estrella" id="es1pel4"></article>
+                    <article class="estrella" id="es2pel4"></article>
+                    <article class="estrella" id="es3pel4"></article>
+                    <article class="estrella" id="es4pel4"></article>
+                    <article class="estrella" id="es5pel4"></article>
+                </section>
+
+                <section class="comentarios">
+                    <h2>Comentarios (3)</h2>
+                    <article>
+                        Comentario 1 : ¡Esta película es una aventura emocionante de principio a fin! Me encantó 
+                        la actuación del elenco y la trama te mantiene pegado a tu asiento en todo momento.
+                        <h4>3/5</h4>
+                    </article>
+
+                    <article>
+                        Comentario 2 : Los efectos visuales de esta película son impresionantes. Me encantó 
+                        la forma en que lograron crear mundos imaginarios y personajes increíbles que realmente 
+                        cobran vida en la pantalla grande.
+                        <h4>3.5/5</h4>
+                    </article>
+
+                    <article>
+                        Comentario 3 : Esta película tiene todo: acción, intriga, romance y humor. Es 
+                        perfecta para ver con amigos o en familia y te deja con ganas de más. ¡Definitivamente 
+                        la recomendaría!
+                        <h4>3/5</h4>
+                    </article>
+
+                    <h2>Enviar comentario</h2>
+                    <form class="formulario_comentario" action="procesar_comentario.php" method="post">
+                    
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br>
+
+                        <label for="comentario">Comentario</label><br>
+                        <textarea name="comentario" id="comentario" rows="10" cols="40" placeholder="Escribe tu comentario..." required></textarea><br>
+
+                        <label for="valoracion">Valoración</label><br>
+                        <input type="number" id="valoracion" name="valoracion" min="0" max="5" step="0.5"><br>
+
+                        <input type="submit" id="boton" name="Enviar">
+                    </form>
+                </section>
+            </section>
+            
+            <a href="#" class="boton-flotante"></a>
+        </main>
+
+        <footer>
+            <a href="contacto.html">Contacto</a> - <a href="como_se_hizo.pdf">Cómo se hizo</a>
+        </footer>
+    </body>
+</html>

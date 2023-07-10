@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cines Moreno - Contacto</title>
+        <link rel="stylesheet" href="estilo.css">
+        <!--Adapta la web al ancho del dispositivo y el zoom-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="enlace-imagen"><img class="logo" src="imagenes/logo.png" alt="Logo"></a>
+
+            <a href="index.html" class="enlace-imagen"><h1>Cines Moreno</h1></a>
+
+            <section class="login">
+                <form class="inicio_sesion" action="procesar.php" method="post">
+                    <input type="text" id="usuario" name="usuario" required placeholder="Usuario"><br>
+
+                    <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña"><br>
+
+                    <input type="submit" id="boton" value="Iniciar Sesión"><br>
+                    <a href="altausuarios.html">Registro de usuario</a>
+                </form>
+            </section>
+
+            <!--Este section lo voy a usar cuando necesite que el siguiente elemento esté en una linea nueva-->
+            <section class="break"></section>
+
+            <nav class="indice">
+                <article><a href="index.html">Inicio</a></article>
+                <article><a href="estrenos.html">Estrenos</a></article>
+                <article><a href="cartelera.html">Cartelera</a></article>
+                <article><a href="horarios.html">Horarios</a></article>
+                <article><a href="tarifas.html">Tarifas</a></article>
+                <article><a href="informacion.html">Información</a></article>
+            </nav>
+        </header>
+
+        <main>
+            <section class="caja_registrado">
+                <h2>Información de Contacto</h2>
+
+                <h3>Desarrollador</h3>
+                <p>Juan Pedro Moreno Ruiz</p>
+
+                <h3>Curso</h3>
+                <p>4º Doble Grado Informática y ADE</p>
+
+                <h3>Correo</h3>
+                <p>juanpemoreno@correo.ugr.es</p>
+
+                <h3>Teléfono</h3>
+                <p>666666666</p>
+
+                <h3>Dirección</h3>
+                <p>C. Periodista Daniel Saucedo Aranda, s/n, 18014 Granada</p>
+
+                <h3>Horario</h3>
+                <p>De 9:00 a 21:00</p>
+            </section>
+
+            <a href="#" class="boton-flotante"></a>
+        </main>
+
+        <footer>
+            <a href="contacto.html">Contacto</a> - <a href="como_se_hizo.pdf">Cómo se hizo</a>
+        </footer>
+    </body>
+</html>

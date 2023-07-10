@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Cines Moreno - Horarios</title>
+        <link rel="stylesheet" href="estilo.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="enlace-imagen"><img class="logo" src="imagenes/logo.png" alt="Logo"></a>
+
+            <a href="index.html" class="enlace-imagen"><h1>Cines Moreno</h1></a>
+
+            <section class="login">
+                <form class="inicio_sesion" action="procesar.php" method="post">
+                    <input type="text" id="usuario" name="usuario" required placeholder="Usuario"><br>
+
+                    <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña"><br>
+
+                    <input type="submit" id="boton" value="Iniciar Sesión"><br>
+                    <a href="altausuarios.html">Registro de usuario</a>
+                </form>
+            </section>
+
+            <!--Este section lo voy a usar cuando necesite que el siguiente elemento esté en una linea nueva-->
+            <section class="break"></section>
+
+            <nav class="indice">
+                <article><a href="index.html">Inicio</a></article>
+                <article><a href="estrenos.html">Estrenos</a></article>
+                <article><a href="cartelera.html">Cartelera</a></article>
+                <article><a href="horarios.html">Horarios</a></article>
+                <article><a href="tarifas.html">Tarifas</a></article>
+                <article><a href="informacion.html">Información</a></article>
+            </nav>
+        </header>
+
+        <main>
+            <section class="caja_horario_tarifas">
+                <table class="horario">
+                    <thead>
+                        <tr>
+                          <th>Película</th>
+                          <th>Horario</th>
+                          <th>Sala</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>El secreto de la isla del tesoro</td>
+                          <td>11:00 AM</td>
+                          <td>Sala 1</td>
+                        </tr>
+                        <tr>
+                          <td>La casa encantada del bosque oscuro</td>
+                          <td>1:00 PM</td>
+                          <td>Sala 2</td>
+                        </tr>
+                        <tr>
+                          <td>La venganza del fantasma vengativo</td>
+                          <td>3:00 PM</td>
+                          <td>Sala 1</td>
+                        </tr>
+                        <tr>
+                          <td>El ladrón del tiempo</td>
+                          <td>5:00 PM</td>
+                          <td>Sala 3</td>
+                        </tr>
+                        <tr>
+                          <td>El último vuelo del dragón azul</td>
+                          <td>7:00 PM</td>
+                          <td>Sala 2</td>
+                        </tr>
+                        <tr>
+                          <td>En busca del tesoro perdido de la Atlántida</td>
+                          <td>9:00 PM</td>
+                          <td>Sala 3</td>
+                        </tr>
+                      </tbody>
+                </table>
+                <p>*Este horario será efectivo de Lunes a Viernes. Los fines de semana "Cines Moreno" permanecerá cerrado.</p>
+            </section>
+
+            <a href="#" class="boton-flotante"></a>
+        </main>
+
+        <footer>
+            <a href="contacto.html">Contacto</a> - <a href="como_se_hizo.pdf">Cómo se hizo</a>
+        </footer>
+    </body>
+</html>

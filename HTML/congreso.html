@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Inscripción Congreso</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>IV Congreso de Fans de Iker Jiménez</h1>
+            <h2>Del 24 al 26 de marzo de 2023</h2>
+            <aside>
+                <h3><a href="mailto:iker@congreso.fans.es">Contacto</a></h3>
+            </aside>
+        </header>
+
+        <main>
+            <section>
+                <article>
+                    <blockquote><h3>"El mundo está adormecido, hundido en su propia crisis existencial."</h3></blockquote>
+                    <cite>Iker Jiménez</cite>
+                </article>
+
+                <article>
+                    <blockquote><h3>"Quiero creer que no estamos solos en el universo."</h3></blockquote>
+                    <cite>Iker Jiménez</cite>
+                </article>
+
+                <article>
+                    <blockquote><h3>"Que nadie se ría de quien tenga una experiencia paranormal; esa risa sólo la tienen los ignorantes."</h3></blockquote>
+                    <cite>Iker Jiménez</cite>
+                </article>
+            </section>
+
+            <section>
+                <h3>Información sobre los Precios</h3>
+                <table border="1" summary="Tabla con los distintos precios de las entradas al congreso">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Registro Temprano</th>
+                            <th>Registro Tardío</th>
+                            <th>Registro Durante Congreso</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <th>Normal</th>
+                            <td>15€</td>
+                            <td>20€</td>
+                            <td>30€</td>
+                        </tr>
+        
+                        <tr>
+                            <th>Profesionales del Misterio</th>
+                            <td>5€</td>
+                            <td>5€</td>
+                            <td>10€</td>
+                        </tr>
+        
+                        <tr>
+                            <th>Estudiantes &lt;26</th>
+                            <td>0€</td>
+                            <td>5€</td>
+                            <td>7.5€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <form action="procesar.php" method="post">
+                    <fieldset>
+                        <legend><h3>Formulario de Inscripción</h3></legend>
+                        <label for="texto1">Nombre:</label>
+                        <input type="text" id="texto1" name="texto1">
+
+                        <label for="texto2">Apellidos:</label>
+                        <input type="text" id="texto2" name="texto2"><br>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="telefono">Número de telefono:</label>
+                        <input type="tel" id="telefono" name="telefono" value="+34"><br>
+
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha"><br>
+
+                        <label for="numeroAcompañantes">Número de Acompañantes:</label>
+                        <input type="number" id="numeroAcompañantes" name="numeroAcompañantes" max="5"><br>
+
+                        <p>¿Es tu primera asistencia al congreso?</p>
+                        <label for="si">Si</label>
+                        <input type="radio" id="si" name="asistencia" value="Si">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="asistencia" value="No"><br>
+
+                        <datalist id="listaConocer">
+                            <option value="A través de la televisión">
+                            <option value="A través de revistas">
+                            <option value="A través de un familiar/amigo">
+                            <option value="A través de las Redes Sociales">
+                            <option value="Asistí a congresos pasados">
+                        </datalist>
+                        <p>¿Cómo conociste el evento?</p>
+                        <input type="text" id="texto3" name="texto3" list="listaConocer"><br><br>
+
+                        <input type="submit" id="boton1" value="Procesar datos">
+                        <input type="reset" id="boton2" value="Reiniciar formulario">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <h5>
+                Congreso Organizado por:<br>
+                · Clubs de Fans Oficial de Iker Jiménez ·
+                Mediaset ·
+                Nave del Misterio ·
+            </h5>
+        </footer>
+    </body>
+</html>

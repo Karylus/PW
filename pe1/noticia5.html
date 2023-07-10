@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cines Moreno - Noticia</title>
+        <link rel="stylesheet" href="estilo.css">
+        <!--Adapta la web al ancho del dispositivo y el zoom-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="enlace-imagen"><img class="logo" src="imagenes/logo.png" alt="Logo"></a>
+
+            <a href="index.html" class="enlace-imagen"><h1>Cines Moreno</h1></a>
+
+            <section class="login">
+                <form class="inicio_sesion" action="procesar.php" method="post">
+                    <input type="text" id="usuario" name="usuario" required placeholder="Usuario"><br>
+
+                    <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña"><br>
+
+                    <input type="submit" id="boton" value="Iniciar Sesión"><br>
+                    <a href="altausuarios.html">Registro de usuario</a>
+                </form>
+            </section>
+
+            <!--Este section lo voy a usar cuando necesite que el siguiente elemento esté en una linea nueva-->
+            <section class="break"></section>
+
+            <nav class="indice">
+                <article><a href="index.html">Inicio</a></article>
+                <article><a href="estrenos.html">Estrenos</a></article>
+                <article><a href="cartelera.html">Cartelera</a></article>
+                <article><a href="horarios.html">Horarios</a></article>
+                <article><a href="tarifas.html">Tarifas</a></article>
+                <article><a href="informacion.html">Información</a></article>
+            </nav>
+        </header>
+
+        <main>
+            <section class="caja_noticias">
+                <h2>Cines Moreno estrena nuevas salas con la última tecnología en proyección y sonido</h2>
+                <p class="fecha">Publicado el 4 de abril de 2023</p>
+                <img class="foto_noticia" src="imagenes/butacas.jpg" alt="Foto Noticia 5">
+
+                <p>
+                    Cines Moreno lanzó recientemente una serie de películas familiares para las vacaciones de verano. 
+                    El programa está diseñado para brindar a los espectadores una selección de películas para todas 
+                    las edades y gustos para disfrutar en familia en un ambiente seguro y cómodo.
+                </p>
+
+                <p>
+                    La colección de películas familiares de Cines Moreno tendrá de todo, desde grandes clásicos animados 
+                    hasta los últimos estrenos. La selección de películas tiene en cuenta la diversidad de gustos y edades 
+                    de los espectadores y se proyectarán en diferentes horarios y días de la semana para adaptarse a las 
+                    necesidades de las familias.
+                </p>
+
+                <p>
+                    La programación de Cines Moreno fue bien recibida por los clientes quienes destacaron la importancia de 
+                    brindar eventos familiares en un ambiente seguro y cómodo durante el verano. El público también aprecia 
+                    la selección de películas para todas las edades y la calidad de las instalaciones y servicios que ofrece
+                    la sala de cine.
+                </p>
+
+                <p>
+                    Con este movimiento, Cines Moreno busca fortalecer su posición como una de las cadenas de cine más importantes 
+                    y valiosas del mercado, ofreciendo a los espectadores una experiencia cinematográfica única y adaptada a sus 
+                    necesidades y gustos. Además, la cadena reforzó su apuesta por la cultura y el entretenimiento familiar, y 
+                    promovió valores como la diversidad y el respeto por públicos de diferentes gustos y edades.
+                </p>
+
+                <nav>
+                    <a href="noticia4.html">Noticia anterior</a> - <a href="noticia6.html">Noticia siguiente</a>
+                </nav>
+            </section>
+
+            <a href="#" class="boton-flotante"></a>
+        </main>
+
+        <footer>
+            <a href="contacto.html">Contacto</a> - <a href="como_se_hizo.pdf">Cómo se hizo</a>
+        </footer>
+    </body>
+</html>

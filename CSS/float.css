@@ -1,0 +1,27 @@
+h1, h4 ,.indice {
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman';
+    font-size: large;
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+    float: left;
+    width: calc(33% - 10px);
+    margin-right: 10px;
+}
+  
+section:last-child {
+    margin-right: 0;
+}
+  
+footer {
+    clear: left;
+    margin-top: 20px;
+}
+  

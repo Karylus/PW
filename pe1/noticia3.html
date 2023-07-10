@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cines Moreno - Noticia</title>
+        <link rel="stylesheet" href="estilo.css">
+        <!--Adapta la web al ancho del dispositivo y el zoom-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="enlace-imagen"><img class="logo" src="imagenes/logo.png" alt="Logo"></a>
+
+            <a href="index.html" class="enlace-imagen"><h1>Cines Moreno</h1></a>
+
+            <section class="login">
+                <form class="inicio_sesion" action="procesar.php" method="post">
+                    <input type="text" id="usuario" name="usuario" required placeholder="Usuario"><br>
+
+                    <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña"><br>
+
+                    <input type="submit" id="boton" value="Iniciar Sesión"><br>
+                    <a href="altausuarios.html">Registro de usuario</a>
+                </form>
+            </section>
+
+            <!--Este section lo voy a usar cuando necesite que el siguiente elemento esté en una linea nueva-->
+            <section class="break"></section>
+
+            <nav class="indice">
+                <article><a href="index.html">Inicio</a></article>
+                <article><a href="estrenos.html">Estrenos</a></article>
+                <article><a href="cartelera.html">Cartelera</a></article>
+                <article><a href="horarios.html">Horarios</a></article>
+                <article><a href="tarifas.html">Tarifas</a></article>
+                <article><a href="informacion.html">Información</a></article>
+            </nav>
+        </header>
+
+        <main>
+            <section class="caja_noticias">
+                <h2>Cines Moreno lanza una iniciativa para promover el cine independiente y las producciones locales</h2>
+                <p class="fecha">Publicado el 6 de abril de 2023</p>
+                <img class="foto_noticia" src="imagenes/camarografo.jpg" alt="Foto Noticia 3">
+
+                <p>
+                    Cines Moreno ha lanzado una iniciativa para promover el cine independiente y las producciones locales. 
+                    El programa muestra películas independientes y producciones locales en uno de los cines durante una semana 
+                    cada mes.
+                </p>
+
+                <p>
+                    La iniciativa tiene como objetivo destacar las películas independientes y locales que a menudo luchan por 
+                    llegar al público debido a la falta de distribución y promoción. Además, el programa permitirá al público 
+                    descubrir nuevas voces y perspectivas en películas que a menudo se pasan por alto en las carteleras comerciales.
+                </p>
+
+                <p>
+                    Para seleccionar las películas que se mostrarán en el programa, Cines Moreno se ha asociado con festivales de cine 
+                    y organizaciones de la industria cinematográfica que apoyan a cineastas independientes y producciones locales. De 
+                    esta manera, se garantiza que las películas seleccionadas sean de alta calidad y cumplan con los estándares del cine.
+                </p>
+
+                <p>
+                    El plan se implementó y recibió comentarios positivos de los residentes y la industria cinematográfica local. Los cinéfilos 
+                    y cineastas locales elogiaron la iniciativa por su compromiso con la diversidad cultural y la promoción de producciones independientes.
+                </p>
+
+                <nav>
+                    <a href="noticia2.html">Noticia anterior</a> - <a href="noticia4.html">Noticia siguiente</a>
+                </nav>
+            </section>
+
+            <a href="#" class="boton-flotante"></a>
+        </main>
+
+        <footer>
+            <a href="contacto.html">Contacto</a> - <a href="como_se_hizo.pdf">Cómo se hizo</a>
+        </footer>
+    </body>
+</html>

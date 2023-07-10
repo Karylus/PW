@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insertar Libros</title>
+</head>
+
+<body>
+    <h1>Insertar un Libro</h1>
+    <p>Por favor, rellene los datos del libro.</p>
+
+    <form action="crearLibro.php" method="post">
+        <label for="titulo">Introduce el ISBN:</label><br>
+        <input type="text" name="isbn" placeholder="ISBN"><br>
+
+        <label for="titulo">Introduce el titulo:</label><br>
+        <input type="text" name="titulo" placeholder="Titulo"><br>
+    
+        <label for="autor">Introduce el autor:</label><br>
+        <input type="text" name="autor" placeholder="Autor"><br>
+    
+        <label for="editorial">Introduce la editorial:</label><br>
+        <input type="text" name="editorial" placeholder="Editorial"><br>
+    
+        <label for="numPaginas">Introduce el número de páginas:</label><br>
+        <input type="text" name="numPaginas" placeholder="Número Páginas"><br>
+    
+        <label for="anio">Introduce el año:</label><br>
+        <input type="text" name="anio" placeholder="Año"><br><br>
+    
+        <input type="submit" value="Crear">
+    </form>
+    
+</body>
+</html>

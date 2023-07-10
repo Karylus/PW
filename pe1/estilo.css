@@ -1,0 +1,716 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue-Regular.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a:visited,
+header a:link {
+    text-decoration: none;
+    color: #B3B3B3;
+}
+
+header h1 {
+    font-family: 'BebasNeue', sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: xxx-large;
+    white-space: nowrap;
+    color: #BB86FC;
+    text-shadow: 0 0 20px #BB86FC;
+}
+
+.logo {
+    width: 70%;
+}
+
+.enlace-imagen {
+    margin-bottom: -3%;
+    margin-top: -3%;
+    flex-basis: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-bottom: 25px;
+    /*Altura del footer*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1E1E1E;
+    border-radius: 100px;
+    /*Muchos pixeles para asegurarme de que es redondo el borde*/
+    position: relative;
+    bottom: 0;
+    margin-top: 2%;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: #B3B3B3;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+a:link,
+a:visited {
+    color: #B3B3B3;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.login {
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    text-align: center;
+    width: 15%;
+    padding-bottom: 0.5%;
+}
+
+.login input {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    overflow: hidden;
+    width: 75%;
+    display: inline-flex;
+    border: none;
+    border-bottom: 1px solid #BB86FC;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+#boton {
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    padding: 0.8em;
+    font-size: clamp(3vw, 1vw);
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 3%;
+    white-space: normal;
+    word-wrap: break-word;
+    justify-content: center;
+}
+
+.login a:hover {
+    color: #FFFFFF;
+}
+
+.indice {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-grow: 100;
+    background-color: #1E1E1E;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 100px;
+}
+
+.indice article {
+    margin: 1%;
+    font-weight: bold;
+}
+
+.indice a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.indice a:hover {
+    text-shadow: 0 0 20px #BB86FC;
+}
+
+/*Documento principal Inicio*/
+.main_index {
+    display: flex;
+    justify-content: space-around;
+}
+
+.barra_noticias {
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    height: calc(100vh - 200px - 25px);
+    width: 20%;
+    overflow-y: scroll;
+    /*Con overflow-y la barra del scroll es vertical*/
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.barra_noticias article {
+    margin-top: 3%;
+    font-size: large;
+    font-weight: bold;
+    overflow: visible;
+}
+
+.foto_titular {
+    width: 85%;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+.foto_titular:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #BB86FC;
+}
+
+.titulares a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.titulares a:hover {
+    color: #B3B3B3;
+}
+
+/*Como la práctica es en Chrome, uso webkit para editar el scroll*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+    height: 15px;
+}
+
+.separador {
+    width: 5%;
+}
+
+.caja_peliculas {
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    height: calc(100vh - 200px - 25px);
+    width: 70%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    justify-content: center;
+    text-align: center;
+}
+
+.caja_peliculas section {
+    display: flex;
+    align-items: center;
+}
+
+.caja_peliculas h2 {
+    color: #BB86FC;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.fila_peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fila_peliculas article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 3%;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.foto_pelicula {
+    width: 65%;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+    margin-bottom: 6%;
+}
+
+.foto_pelicula:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #BB86FC;
+}
+
+.fila_peliculas article a:link,
+.fila_peliculas article a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fila_peliculas article a:hover {
+    color: #B3B3B3;
+}
+
+/*Documento de registro en la web*/
+.caja_registro {
+    background-color: #1E1E1E;
+    display: flex;
+    flex-basis: 50%;
+    /*Centra el formulario en mitad de la web*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 25px;
+}
+
+#mail,
+#nombre,
+#apellido,
+#nacimiento,
+#dni,
+#contra {
+    margin-bottom: 7%;
+    border: none;
+    border-bottom: 1px solid #BB86FC;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+#newsletter {
+    /* Eliminar la apariencia predeterminada */
+    appearance: none;
+    margin-left: 5%;
+    width: 15px;
+    height: 15px;
+    /* Hago el borde redondo */
+    border-radius: 100px;
+    border: 1px solid #B3B3B3;
+}
+
+#newsletter:checked {
+    background-color: #BB86FC;
+    /* Cambiar el color de fondo */
+    border: none;
+    /* Cambiar el color del borde */
+}
+
+/*Cambio de color del icono a blanco*/
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/*Docuento sobre Estrenos, Cartelera, Mas Valoradas y Proximas*/
+.peliculas_estreno {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    margin-left: 10%;
+    justify-content: space-around;
+    overflow: visible;
+}
+
+.peliculas_estreno h2 {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 3%;
+    background-color: #1E1E1E;
+    border-radius: 100px;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #BB86FC;
+    text-decoration: underline;
+}
+
+.peliculas_estreno article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    margin-bottom: 3%;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.peliculas_estreno article img {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.peliculas_estreno article p {
+    color: #B3B3B3;
+    font-size: 14px;
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+
+.peliculas_estreno a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.peliculas_estreno a:hover {
+    color: #B3B3B3;
+}
+
+/*Documentos informacion de las peliculas*/
+.caja_datos {
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    margin-left: 10%;
+}
+
+.caja_datos>* {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.caja_datos h2 {
+    color: #BB86FC;
+    text-decoration: underline;
+}
+
+.fila_imagenes {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4%;
+    margin-top: -4%;
+}
+
+.frame {
+    width: 20%;
+}
+
+.datos_pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-basis: 100%;
+    margin-bottom: 3%;
+}
+
+.datos_pelicula h3 {
+    color: #BB86FC;
+    text-decoration: underline;
+}
+
+.clasificacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    height: 50px;
+    margin-left: 36.5%;
+}
+
+.estrella {
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    margin-left: 2%;
+    background-image: url(imagenes/estrella.png);
+    background-size: cover;
+}
+
+#es4pel1,
+#es5pel1,
+#es5pel3,
+#es5pel4,
+#es2pel5,
+#es3pel5,
+#es4pel5,
+#es5pel5,
+#es3pel6,
+#es4pel6,
+#es5pel6 {
+    opacity: 0.4;
+}
+
+.comentarios article {
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+#nombre {
+    margin-bottom: 2%;
+}
+
+#comentario {
+    border: 1px solid #BB86FC;
+    background-color: #1E1E1E;
+    margin-bottom: 1%;
+    color: #FFFFFF
+}
+
+#valoracion {
+    margin-bottom: 2%;
+    border: none;
+    border-bottom: 1px solid #BB86FC;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+/*Documento con el Horario y Tarifas de las peliculas*/
+.caja_horario_tarifas {
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.caja_horario_tarifas th {
+    color: #BB86FC;
+    text-shadow: 0 0 20px #BB86FC;
+    font-size: x-large;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.caja_horario_tarifas td {
+    padding-bottom: 3%;
+}
+
+.caja_horario_tarifas p {
+    color: #B3B3B3;
+    font-size: smaller;
+    text-align: left;
+    padding-left: 4%;
+}
+
+/*Documento informacion del cine*/
+.caja_info {
+    text-align: justify;
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    margin-left: 10%;
+}
+
+.caja_info h2 {
+    color: #BB86FC;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.caja_info iframe {
+    margin-left: 25%;
+    margin-bottom: 3%;
+    width: 50%;
+    height: 350px;
+}
+
+.caja_info article {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/*Documento con las noticias*/
+.caja_noticias {
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    margin-left: 10%;
+}
+
+.caja_noticias h2 {
+    margin-left: 3%;
+    color: #BB86FC;
+    text-shadow: 0 0 20px #BB86FC;
+    margin-bottom: -1%;
+}
+
+.foto_noticia {
+    width: 40%;
+    /*Centro la imagen*/
+    margin-left: 30%;
+}
+
+.caja_noticias p {
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.fecha {
+    color: #B3B3B3;
+    font-size: smaller;
+    margin-left: 3%;
+}
+
+.caja_noticias nav {
+    margin-left: 3%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.caja_noticias nav a {
+    text-decoration: none;
+}
+
+/*Documento de registro completado*/
+.caja_registrado {
+    background-color: #1E1E1E;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    margin-left: 10%;
+    padding-left: 5%;
+}
+
+.caja_registrado h2 {
+    color: #BB86FC;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.caja_registrado h3 {
+    color: #BB86FC;
+    margin: 0;
+}
+
+.caja_registrado p {
+    text-align: justify;
+    font-size: larger;
+}
+
+/*Estilo del boton que devuelve al principio de la pagina*/
+
+.boton-flotante {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background-image: url("./imagenes/flecha.png");
+    background-color: #BB86FC;
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+    border: none;
+    border-radius: 10%;
+    z-index: 1; /*Traigo el elemento al frente*/
+}
+
+.boton-flotante:hover {
+    background-color: #994af1;
+}
+
+/*Configuracion para la pantalla del móvil*/
+@media screen and (max-width: 480px) {
+    header h1 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .enlace-imagen {
+        flex-basis: 50%;
+    }
+
+    .login {
+        flex-basis: 100%;
+        margin-bottom: 3%;
+    }
+
+    .main_index {
+        display: block;
+    }
+
+    .main_index>* {
+        width: 100%;
+        overflow-y: visible;
+    }
+
+    .caja_peliculas {
+        margin-top: 3%;
+        height: auto;
+    }
+
+    .barra_noticias {
+        height: auto;
+    }
+
+    .barra_noticias article img {
+        margin-top: 2%;
+    }
+
+    .foto_titular {
+        width: 70%;
+    }
+
+    .titulares {
+        margin-bottom: 2%;
+    }
+
+    .boton-flotante{
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        padding: 5%;
+        width: auto;
+    }
+}
